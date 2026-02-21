@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Twitter, Github } from "lucide-react"
+import { Linkedin, Twitter, Instagram, Mail } from "lucide-react"
 
 const footerLinks = [
   { label: "Solutions", href: "#services" },
@@ -10,9 +10,21 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Github, href: "#", label: "GitHub" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/arise.at/",
+    label: "Instagram",
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/ariseautomationtech/",
+    label: "LinkedIn",
+  },
+  {
+    icon: Twitter,
+    href: "https://x.com/Arise278622",
+    label: "X (Twitter)",
+  },
 ]
 
 export default function Footer() {
@@ -22,7 +34,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-4" aria-label="ARISE Home">
+            <Link href="/" className="flex items-center gap-2.5 mb-4" aria-label="Arise Automation Tech — Home">
               <svg
                 width="28"
                 height="28"
@@ -42,7 +54,7 @@ export default function Footer() {
                 className="text-base font-bold tracking-wide text-[var(--foreground)]"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                ARISE
+                Arise Automation Tech
               </span>
             </Link>
             <p className="text-sm text-[var(--muted-color)] max-w-xs leading-relaxed">
@@ -82,8 +94,15 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-2.5 text-sm text-[var(--muted-color)] mb-6">
-              <li>hello@arise.dev</li>
-              <li>+1 (555) 123-4567</li>
+              <li className="flex items-center gap-2">
+                <Mail className="w-3.5 h-3.5 flex-shrink-0 text-[var(--accent-1)]" strokeWidth={1.5} />
+                <a
+                  href="mailto:ariseautomationtech@gmail.com"
+                  className="hover:text-[var(--accent-1)] transition-colors duration-200"
+                >
+                  ariseautomationtech@gmail.com
+                </a>
+              </li>
             </ul>
 
             <div className="flex gap-3">
@@ -91,6 +110,8 @@ export default function Footer() {
                 <Link
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg border border-[var(--glass-border)] bg-[var(--glass)] flex items-center justify-center text-[var(--muted-color)] hover:text-[var(--accent-1)] hover:border-[var(--accent-1)]/30 transition-all duration-200"
                   aria-label={social.label}
                 >
@@ -104,7 +125,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-[var(--glass-border)] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--muted-color)]">
-            © {new Date().getFullYear()} ARISE. All rights reserved.
+            © {new Date().getFullYear()} Arise Automation Tech. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-[var(--muted-color)]">
             <Link href="#" className="hover:text-[var(--accent-1)] transition-colors">

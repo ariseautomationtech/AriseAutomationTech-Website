@@ -4,7 +4,7 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Check, Clock, CalendarDays } from "lucide-react"
 
-const calendlyLink = "https://calendly.com/kurmaritish777/30min"
+const calendlyLink = "https://calendly.com/ariseautomationtech/30min"
 
 const tiers = [
   {

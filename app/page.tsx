@@ -1,10 +1,11 @@
 import Header from "@/components/header"
 import HeroSection from "@/components/hero-section"
 import Solutions from "@/components/solutions"
+import ChatbotShowcase from "@/components/chatbot-showcase"
 import HowItWorks from "@/components/how-it-works"
 import UseCases from "@/components/use-cases"
-import Pricing from "@/components/pricing"
-import SecurityTrust from "@/components/security-trust"
+// import Pricing from "@/components/pricing"
+
 import FaqSection from "@/components/faq-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
@@ -17,16 +18,19 @@ export default function Home() {
       <section id="services">
         <Solutions />
       </section>
+      <section id="chatbot">
+        <ChatbotShowcase />
+      </section>
       <section id="how-it-works">
         <HowItWorks />
       </section>
       <section id="use-cases">
         <UseCases />
       </section>
-      <section id="pricing">
+      {/* <section id="pricing">
         <Pricing />
-      </section>
-      <SecurityTrust />
+      </section> */}
+
       <FaqSection />
       <section id="contact">
         <ContactSection />

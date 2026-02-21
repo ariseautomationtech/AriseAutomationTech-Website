@@ -295,26 +295,7 @@ export default function HeroSection() {
               ))}
             </motion.div>
 
-            {/* Microtrust */}
-            <motion.div
-              className="flex items-center gap-4 pt-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6, ease }}
-            >
-              <span className="text-xs text-[var(--muted-color)] uppercase tracking-wider">
-                Trusted by
-              </span>
-              <div className="flex items-center gap-3">
-                {[1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="w-16 h-6 rounded bg-white/[0.06] border border-white/[0.08]"
-                    aria-label={`Client logo ${i}`}
-                  />
-                ))}
-              </div>
-            </motion.div>
+
           </div>
 
           {/* ── Right Visual: AI Automation Console (2/5) ─────────────── */}

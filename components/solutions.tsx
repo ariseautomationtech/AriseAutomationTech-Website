@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Workflow, BotMessageSquare, Plug, ArrowRight } from "lucide-react"
+import { Workflow, BotMessageSquare, MessageCircle, ArrowRight } from "lucide-react"
 
 const services = [
   {
@@ -28,14 +28,14 @@ const services = [
     ],
   },
   {
-    icon: Plug,
-    title: "Integration & Deployment",
+    icon: MessageCircle,
+    title: "Internal Customer Support Chatbot",
     description:
-      "Connect your existing stack and ship production-ready automations with zero downtime.",
+      "RAG-powered support chatbots trained on your own knowledge base — delivering instant, accurate answers 24/7.",
     bullets: [
-      "API-first architecture",
-      "Cloud-native CI/CD pipelines",
-      "Real-time monitoring & alerts",
+      "Retrieval-Augmented Generation (RAG)",
+      "Custom knowledge-base ingestion",
+      "End-to-end chatbot deployment",
     ],
   },
 ]

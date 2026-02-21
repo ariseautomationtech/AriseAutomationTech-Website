@@ -20,9 +20,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.arise.dev"),
-  title: "ARISE – AI Automation Services & Custom Workflow Solutions",
+  title: "Arise Automation Tech – AI Automation Services & Custom Workflow Solutions",
   description:
-    "ARISE helps businesses automate workflows using AI agents and intelligent automation systems. Reduce manual work, improve efficiency, and scale faster with custom AI automation solutions.",
+    "Arise Automation Tech helps businesses automate workflows using AI agents and intelligent automation systems. Reduce manual work, improve efficiency, and scale faster with custom AI automation solutions.",
   keywords: [
     "AI automation services",
     "workflow automation agency",
@@ -42,24 +42,24 @@ export const metadata: Metadata = {
     "AI-integrated web apps",
   ],
   openGraph: {
-    title: "AI Automation Services by ARISE",
+    title: "AI Automation Services by Arise Automation Tech",
     description:
       "Production-ready AI automation solutions for modern businesses. Custom AI agents, workflow automation, and intelligent process optimization.",
     type: "website",
     url: "https://www.arise.dev",
-    siteName: "ARISE",
+    siteName: "Arise Automation Tech",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ARISE – AI Automation Services and Custom Workflow Solutions",
+        alt: "Arise Automation Tech – AI Automation Services and Custom Workflow Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation Services by ARISE",
+    title: "AI Automation Services by Arise Automation Tech",
     description:
       "Production-ready AI automation solutions for modern businesses. Reduce manual work and scale faster.",
     images: ["/og-image.png"],
@@ -91,7 +91,7 @@ export default function RootLayout({
       {
         "@type": "Organization",
         "@id": "https://www.arise.dev/#organization",
-        name: "ARISE",
+        name: "Arise Automation Tech",
         url: "https://www.arise.dev",
         logo: {
           "@type": "ImageObject",
@@ -100,23 +100,24 @@ export default function RootLayout({
           height: 60,
         },
         description:
-          "ARISE is an AI automation agency helping businesses automate workflows, reduce manual work, and deploy custom AI agents for measurable efficiency gains.",
+          "Arise Automation Tech is an AI automation agency helping businesses automate workflows, reduce manual work, and deploy custom AI agents for measurable efficiency gains.",
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "sales",
-          email: "hello@arise.dev",
+          email: "ariseautomationtech@gmail.com",
           availableLanguage: "English",
         },
         areaServed: "Worldwide",
         sameAs: [
-          "https://www.linkedin.com/company/arise",
-          "https://twitter.com/arise_dev",
+          "https://www.linkedin.com/in/ariseautomationtech/",
+          "https://x.com/Arise278622",
+          "https://www.instagram.com/arise.at/",
         ],
       },
       {
         "@type": "WebSite",
         "@id": "https://www.arise.dev/#website",
-        name: "ARISE – AI Automation Services",
+        name: "Arise Automation Tech – AI Automation Services",
         url: "https://www.arise.dev",
         publisher: { "@id": "https://www.arise.dev/#organization" },
         inLanguage: "en-US",
